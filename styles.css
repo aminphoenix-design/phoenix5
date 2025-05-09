@@ -1,45 +1,342 @@
+/* ======= ESTILOS GENERALES ======= */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #0e0e0e;
+    color: #f0e6f6;
+    overflow-x: hidden;
+    position: relative;
 }
 
-header {
-    background-color: #212529;
-    color: white;
-    padding: 1em;
+h1, h2, h3, h4, h5, h6 {
+    color: #d4af37;
+    text-align: center;
+    text-shadow: 0 0 8px #9b59b6;
 }
 
-nav a {
-    color: white;
-    margin: 0 1em;
+a {
+    color: #b084d6;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-nav a.active {
-    font-weight: bold;
+a:hover {
+    color: #d4af37;
+    text-shadow: 0 0 5px #d4af37;
     text-decoration: underline;
 }
 
-main {
-    padding: 2em;
-}
-
-footer {
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 1em;
+/* ======= PARTICULAS ======= */
+#particles-js {
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: -10;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    max-width: 400px;
+/* ======= HEADER & NAVBAR ======= */
+header {
+    background-color: #1a1a1a;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #9b59b6;
+    box-shadow: 0 2px 10px rgba(155, 89, 182, 0.3);
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 14px 22px;
+    font-size: 18px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: radial-gradient(circle, #9b59b6 0%, #2c2c2c 100%);
+    box-shadow: 0 0 10px #d4af37;
+}
+
+/* ======= SECCIÓN PRINCIPAL ======= */
+#principal {
+    text-align: center;
+    margin: 60px 0;
+    padding: 30px;
+    background-color: #121212;
+    box-shadow: inset 0 0 30px #2c2c2c;
+    border-radius: 10px;
+}
+
+.btn-principal {
+    background: linear-gradient(145deg, #9b59b6, #8e44ad);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #9b59b6;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background: #d4af37;
+    color: #121212;
+    box-shadow: 0 0 12px #d4af37;
+}
+
+/* ======= FORMULARIOS ======= */
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background-color: #1d1d1d;
+    color: #fff;
+    border: 1px solid #9b59b6;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 6px #d4af37;
+}
+
+button {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+/* ======= PILARES ======= */
+.pilar {
+    background-color: #1b1b1b;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #9b59b6;
+    box-shadow: 0 0 10px #9b59b6;
+    transition: 0.3s ease;
+}
+
+.pilar:hover {
+    box-shadow: 0 0 15px #d4af37;
+}
+
+.pilar h3 {
+    font-size: 1.8em;
+}
+
+.pilar .btn-pilar {
+    display: inline-block;
+    margin-top: 12px;
+    text-align: center;
+    background-color: #9b59b6;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pilar .btn-pilar:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+/* ======= CARDS ======= */
+.card {
+    background-color: #181818;
+    border: 1px solid #9b59b6;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background-color: #202020;
+    color: #aaa;
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid #9b59b6;
+    box-shadow: 0 -2px 10px rgba(155, 89, 182, 0.3);
+}
+
+/* ======= ANIMACIONES ======= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+.pulse:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* ======= COMPONENTES EXTRA ======= */
+.badge {
+    background-color: #d4af37;
+    color: #121212;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+/* ======= BOTONES SECUNDARIOS ======= */
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+/* ======= SCROLLBAR ======= */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9b59b6;
+    border-radius: 6px;
+    border: 3px solid #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d4af37;
+}
+
+/* ======= SECCIONES EXTRA ======= */
+.section {
+    padding: 60px 20px;
+    border-top: 1px solid #2a2a2a;
+    position: relative;
+}
+
+.section-dark {
+    background-color: #181818;
+}
+
+.section:nth-child(odd) {
+    background-color: #121212;
+}
+
+.section:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+/* Elementos mágicos */
+.rune-glow {
+    color: #d4af37;
+    text-shadow: 0 0 6px #9b59b6, 0 0 12px #d4af37;
+    font-weight: bold;
+}
+
+/* Separadores */
+.separator {
+    height: 3px;
+    background: linear-gradient(to right, #9b59b6, #d4af37);
+    margin: 40px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 6px #9b59b6;
+}
+
+/* Transiciones */
+.transition-fast {
+    transition: all 0.2s ease-in-out;
+}
+
+.transition-slow {
+    transition: all 0.5s ease;
+}
+
+/* Máscaras para fondos */
+.mask-vignette {
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+/* Efecto mágico de fondo */
+.mystic-bg {
+    background: radial-gradient(circle at top, rgba(212, 175, 55, 0.05), transparent),
+                radial-gradient(circle at center, rgba(155, 89, 182, 0.05), transparent);
+    background-blend-mode: screen;
+}
+
+/* Añadir más módulos según crezcas */
