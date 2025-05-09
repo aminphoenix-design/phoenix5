@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realiza tu Ritual - PhoenixFrame</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>PhoenixFrame</h1>
+        <p>Realiza tu Ritual de Renacimiento</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="grimorio.html">Grimorio</a></li>
+            <li><a href="visiones.html">Visión del Futuro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="ritual">
+        <h2>Comienza tu Ritual</h2>
+        <form id="formulario-ritual">
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <select id="pilar" required>
+                <option value="tiempo">Tiempo</option>
+                <option value="vida">Vida</option>
+                <option value="muerte">Muerte</option>
+                <option value="poder">Poder</option>
+            </select>
+            <button type="submit">Realizar Ritual</button>
+        </form>
+        <h3>Rituales Realizados</h3>
+        <ul id="lista-rituales"></ul>
+    </section>
+</body>
+</html>
